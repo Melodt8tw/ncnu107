@@ -1,11 +1,5 @@
 
-/* 
- DESCRIPTION
- ====================
- Simple example of the Bounce library that switches the debug LED when a button is pressed.
- */
-// Include the Bounce2 library found here :
-// https://github.com/thomasfredericks/Bounce2
+
 #include <Bounce2.h>
 
 #define BUTTON_PIN 2
@@ -14,22 +8,22 @@
 #define BUTTON_PIN2 3
 #define LED_PIN2 12
 
-// Instantiate a Bounce object
+
 Bounce debouncer = Bounce(); 
 Bounce debouncer2 = Bounce(); 
 
 void setup() {
 
-  // Setup the button with an internal pull-up :
+ 
   pinMode(BUTTON_PIN,INPUT_PULLUP);
  pinMode(BUTTON_PIN2,INPUT_PULLUP);
-  // After setting up the button, setup the Bounce instance :
+  
   debouncer.attach(BUTTON_PIN);
-  debouncer.interval(5); // interval in ms
+  debouncer.interval(5); 
   
   debouncer2.attach(BUTTON_PIN2);
   debouncer2.interval(5);
-  //Setup the LED :
+ 
   pinMode(LED_PIN,OUTPUT);
 pinMode(LED_PIN2,OUTPUT);
 }
