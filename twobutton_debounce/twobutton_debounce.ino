@@ -29,13 +29,13 @@ pinMode(LED_PIN2,OUTPUT);
 }
 
 void loop() {
-  // Update the Bounce instance :
+
   debouncer.update();
 debouncer2.update();
-  // Get the updated value :
+  
   int value = debouncer.read();
 int value2 = debouncer2.read();
-  // Turn on or off the LED as determined by the state :
+  
   if ( value == LOW ) {
     digitalWrite(LED_PIN, HIGH );
   } 
