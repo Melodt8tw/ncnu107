@@ -26,7 +26,7 @@ analogWrite(Rled,0);
 analogWrite(Gled,0);
 for(int i=0;i < 256;i++)
  {analogWrite(Bled,i);
-  delay(1000);
+  delay(100);
    }
    delay(500);
    
@@ -34,7 +34,7 @@ analogWrite(Bled,0);
 for(int i=0;i < 256;i++)
  {analogWrite(Rled,i);
  analogWrite(Gled,i);
-  delay(1000);
+  delay(100);
    }
    delay(500);
 
