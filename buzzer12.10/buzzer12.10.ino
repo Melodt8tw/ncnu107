@@ -2,7 +2,7 @@
 void setup() {
   // put your setup code here, to run once:
  initAll();
- bell(1);
+ bell(2);
 }
 
 void loop() {
@@ -19,7 +19,7 @@ void initAll()
 void bell(double x)
 {
   digitalWrite(buzzer,HIGH);
-  delay(x = 1000);
+  delay(x = 500);
   digitalWrite(buzzer,LOW);
 }
 
